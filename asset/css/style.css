@@ -1,0 +1,67 @@
+#btbg1 {
+    height: 50%;
+}
+#btbg2 {
+    height: 50%;
+}
+#Den {
+    width: 100px;
+    height: 120px;
+}
+
+
+/* css for check box */
+input[type=checkbox] {
+    visibility: hidden;
+}
+.cb {
+  width: 160px;
+  height: 60px;
+  background: #333;
+  margin: 35px 60px 0px 40px;
+
+  border-radius: 50px;
+  position: relative;
+}
+
+.cb:before {
+  content: 'On';
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  height: 22px;
+  color: #26ca28;
+  font-size: 16px;
+}
+.cb:after {
+  content: 'Off';
+  position: absolute;
+  top: 19px;
+  left: 114px;
+  height: 22px;
+  color: red;
+  font-size: 16px;
+}
+.cb label {
+  display: block;
+  width: 92px;
+  height: 42px;
+  border-radius: 50px;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  z-index: 1;
+  left: 12px;
+  background: #ddd;
+}
+
+.cb input[type=checkbox]:checked + label {
+  left: 60px;
+  background: #26ca28;
+}
